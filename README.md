@@ -123,4 +123,5 @@ Feedstock Maintainers
 
 * [@jaimergp](https://github.com/jaimergp/)
 * [@jchodera](https://github.com/jchodera/)
+* [@mikemhenry](https://github.com/mikemhenry/)
 
