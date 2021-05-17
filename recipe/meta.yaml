@@ -1,5 +1,5 @@
 {% set name = "perses" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,15 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: adafc9aac88cba3a2a103a814520aa1c58728513f784cd71d7fdca9cdaa3dc0d
+  sha256: 9023af941159ef9a50563460348c71d9a428b8325ac030909a67a9cfea46d68c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --no-deps"
+  script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
-  - perses-relative = perses.app.setup_relative_calculation:run
-  - perses-fah = perses.app.fah_generator:run
+    - perses-relative = perses.app.setup_relative_calculation:run
+    - perses-fah = perses.app.fah_generator:run
 
 requirements:
   host:
@@ -30,25 +30,24 @@ requirements:
     - netcdf4
     - matplotlib-base
     - seaborn
-    - lxml
     - networkx >=2.0
     - dask
     - distributed
-    - progressbar2
     - tqdm
+    - pyyaml
+    - pandas
+    - pymol-open-source
     - dask-jobqueue
     - dicttoxml
     - fire
     - joblib
     - mdtraj
-    - pymbar
+    - pymbar ==3.0.3
     - ambertools >=19.11
     - openmm >=7.4.2
     - openmmforcefields
     - openmoltools >=0.8.4
     - openmmtools >=0.20.0
-    - yank
-    - pdbfixer
     # - openeye-toolkits
 
 test:
