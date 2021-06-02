@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
@@ -36,7 +36,6 @@ requirements:
     - tqdm
     - pyyaml
     - pandas
-    - pymol-open-source
     - dask-jobqueue
     - dicttoxml
     - fire
