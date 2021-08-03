@@ -1,5 +1,5 @@
 {% set name = "perses" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: 9023af941159ef9a50563460348c71d9a428b8325ac030909a67a9cfea46d68c
+  sha256: 219e63367a402412d8c1c95bd55010fbadee87b7c37b9be3d722fff503b1911a
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
@@ -43,7 +43,7 @@ requirements:
     - mdtraj
     - pymbar ==3.0.3
     - ambertools >=19.11
-    - openmm >=7.4.2
+    - openmm >=7.5.0
     - openmmforcefields
     - openmoltools >=0.8.4
     - openmmtools >=0.20.0
@@ -74,3 +74,4 @@ extra:
     - jaimergp
     - jchodera
     - mikemhenry
+    - ijpulidos
