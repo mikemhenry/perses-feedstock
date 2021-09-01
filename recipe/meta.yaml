@@ -1,5 +1,5 @@
 {% set name = "perses" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: 219e63367a402412d8c1c95bd55010fbadee87b7c37b9be3d722fff503b1911a
+  sha256: f0de50d1641923ee25ad665c792993eaaa7faf7f844ac729e84fecf208ea504b
 
 build:
   noarch: python
