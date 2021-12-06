@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: f0de50d1641923ee25ad665c792993eaaa7faf7f844ac729e84fecf208ea504b
+  sha256: 51b57805dd26c0276dc48643b0beea4e2db2d7137e3b0f6931052c83d247b0c9
 
 build:
   noarch: python
