@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
@@ -41,7 +41,7 @@ requirements:
     - fire
     - joblib
     - mdtraj
-    - pymbar ==3.0.3
+    - pymbar >=3.0.6,<4
     - ambertools >=19.11
     - openmm =7.6
     - openmmforcefields
