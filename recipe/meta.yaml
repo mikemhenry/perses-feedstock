@@ -1,5 +1,5 @@
 {% set name = "perses" %}
-{% set version = "0.9.5" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: b3f5982a7bbfc7ed61d904e38a8b580082519e77fae1fff167922d879fa08a6d
+  sha256: cf55ccbfd2b635bc5a576ecdc19d4759ac2e03e6a17bd2f040a4b66bcdb172ca
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
