@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/choderalab/{{ name }}.git
-  git_rev: 5a2f425ed72007119280308ab73b52d84d3f02588ae89f89f08e5d59b5ca66a6
+  git_rev: 53c61b8bfddd6f815d2e4523af5d8c77eba030d8
 
 build:
   noarch: python
