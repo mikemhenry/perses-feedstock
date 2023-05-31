@@ -49,6 +49,7 @@ requirements:
     - pymbar >=3.0.6,<4
     - python >=3.6
     - pyyaml
+    - rich
     - scipy
     - seaborn
     - tqdm
