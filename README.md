@@ -1,11 +1,11 @@
-About perses
-============
+About perses-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perses-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/choderalab/perses
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/perses-feedstock/blob/main/LICENSE.txt)
 
 Summary: Experiments with expanded ensemble simulation to explore chemical and mutational space
 
